@@ -4,7 +4,7 @@ import seaborn as sns
 import plotly.express as px
 import streamlit as st
 
-df = pd.read_csv("clean_bikesharing-hour-dataset.csv")
+df = pd.read_csv("https://raw.githubusercontent.com/MuhammadAzisSaputra/bikesharing-analysis/refs/heads/main/dashboard/clean_bikesharing-hour-dataset.csv")
 df['dteday'] = pd.to_datetime(df['dteday'])
 
 st.set_page_config(page_title="Bike-sharing Dashboard", layout="wide")
